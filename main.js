@@ -1,6 +1,6 @@
 function preload()
 {
-
+clown_nose= loadImage("https://i.postimg.cc/MpqfSQVb/Khushi.png");
 }
 function setup()
 {
@@ -22,9 +22,13 @@ function modelLoaded()
 function draw()
 {
 image(video,0,0, 400,400);
-circle(Nose_x, Nose_y, 20);
-fill(225,0,0);
-stroke(225,0,0);
+// option 1 to draw the clown using predefined function circle
+//circle(Nose_x, Nose_y, 20);
+//fill(225,0,0);
+//stroke(225,0,0);
+
+//option 2 to draw the clone by uploading the image clown.png using preload function 
+image(clown_nose, Nose_x, Nose_y, 30,30)
 }
 Nose_x=0;
 Nose_y=0;
